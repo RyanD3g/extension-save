@@ -12,8 +12,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'yarn'
+          cache: 'npm'
       - run: cd api
-      - run: yarn
-      - run: yarn test
+      - run: npm
+      - run: npm run test
       
